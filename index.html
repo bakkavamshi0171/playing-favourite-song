@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Music</a></li>
+            <li><a>Artists</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="left-col">
+            <h1>My <br>Favourite song</h1>
+        </div>
+        <div class="right-col">
+            <button class="button">Click here to play a song</button>
+            <img src="https://c.tenor.com/J8CqhmNqBlUAAAAd/tenor.gif" height="50px" id="icon">
+        </div>
+    </div>
+
+    <audio id="mysong">
+        <source src="./Anuvanuvuu.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        let music = document.getElementById("mysong");
+        let button =document.querySelector(".button");
+        let icon = document.getElementById("icon");
+
+        button.onclick = function(){
+            if(music.paused){
+                music.play();
+                
+            }else{
+                music.pause(); 
+            }
+        }
+    </script>
+</body>
+</html>

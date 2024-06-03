@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding:0;
+    background-image: url("./GIF\ from\ GIFER.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    color: aliceblue;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+.navbar li{
+    margin:10px;
+    padding:5px 35px;
+    height:50px;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+
+   background: linear-gradient(to right,
+                green,
+                yellow,
+                    orange,
+                    red);
+    -webkit-background-clip: text;
+    color: transparent;
+    display:block ;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:60%;
+    display:flex;
+    justify-content:space-around
+}
+.left-col h1{
+    font-size: 5rem;
+    background: linear-gradient(to left,
+    green,
+    yellow,
+        orange,
+        red);
+-webkit-background-clip: text;
+color: transparent;
+display:block ;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.right-col{
+    margin: 80px;
+    top:30%;
+    position: relative;
+    top:15PX
+
+}
+.right-col button{
+    padding: 10px;
+    height:50px;
+    font-size: x-large;
+    background: linear-gradient(to left,
+    green,
+    yellow,
+        orange,
+        red);
+        -webkit-background-clip: text;
+        color: transparent;
+        border:none;
+}
+img{
+    border-radius: 50%;
+    position: relative;
+    top:15Px;
+    
+}
